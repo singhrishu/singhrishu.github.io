@@ -117,10 +117,18 @@
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
 
-              <li class="group pl-6">
+<li class="group pl-6">
 
                 <span @click="triggerNavItem('#statistics')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Statistics</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#awards')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Awards</span>
 
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
@@ -200,6 +208,13 @@
 
               <span @click="triggerMobileNavItem('#statistics')"
                 class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Statistics</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#awards')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Awards</span>
 
             </li>
 
@@ -411,34 +426,111 @@
             Here's what I have done with the past
           </h3>
 
-          <div class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:grid-cols-2 lg:grid-cols-4">
-            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-              <img src="/assets/img/pricing-guidance-prediction.png" class="w-full shadow"
-                alt="Pricing Guidance Prediction" />
-            </a>
-            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-              <img src="/assets/img/estimated-delivery-time.jpg" class="w-full shadow" alt="Estimated Delivery Time" />
-            </a>
-            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-              <img src="/assets/img/customer-segmentation-based-on-rfm.jpg" class="w-full shadow"
-                alt="Customer Segmentation based on RFM" />
-            </a>
-            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-              <img src="/assets/img/propensity-model.png" class="w-full shadow" alt="Propensity Model" />
-            </a>
-            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-              <img src="/assets/img/catalogue-management.jpg" class="w-full shadow" alt="Catalogue Management" />
-            </a>
-            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-              <img src="/assets/img/fraud-detection.png" class="w-full shadow" alt="Fraud Detection" />
-            </a>
-            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-              <img src="/assets/img/cross-sell-with-tableau-dashboard.jpg" class="w-full shadow"
-                alt="Cross Sell with Tableau Dashboard" />
-            </a>
-            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-              <img src="/assets/img/driverless-car.png" class="w-full shadow" alt="Driverless Car" />
-            </a>
+          <div class="grid grid-cols-1 gap-6 pt-10 md:grid-cols-2 lg:grid-cols-3">
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 overflow-hidden rounded-full text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/pricing-guidance-prediction.png" class="w-full h-full object-cover" alt="project image" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Pricing Guidance Prediction
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Advanced ML model for dynamic pricing optimization.
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 overflow-hidden rounded-full text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/estimated-delivery-time.jpg" class="w-full h-full object-cover" alt="project image" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Estimated Delivery Time
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Predictive analytics for logistics and supply chain.
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 overflow-hidden rounded-full text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/customer-segmentation-based-on-rfm.jpg" class="w-full h-full object-cover" alt="project image" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Customer Segmentation (RFM)
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  RFM analysis for personalized marketing strategies.
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 overflow-hidden rounded-full text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/propensity-model.png" class="w-full h-full object-cover" alt="project image" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Propensity Model
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Customer propensity scoring for churn prediction.
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 overflow-hidden rounded-full text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/catalogue-management.jpg" class="w-full h-full object-cover" alt="project image" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Catalogue Management
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  AI-powered product catalog optimization.
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 overflow-hidden rounded-full text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/fraud-detection.png" class="w-full h-full object-cover" alt="project image" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Fraud Detection
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Real-time anomaly detection system.
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 overflow-hidden rounded-full text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/cross-sell-with-tableau-dashboard.jpg" class="w-full h-full object-cover" alt="project image" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Cross Sell Tableau Dashboard
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Interactive BI dashboard for upsell opportunities.
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 overflow-hidden rounded-full text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/driverless-car.png" class="w-full h-full object-cover" alt="project image" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Driverless Car
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Autonomous vehicle controller development.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -648,6 +740,57 @@
                     </h4>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div id="awards" class="container py-16 md:py-20 bg-white">
+          <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+            Awards & Achievements
+          </h2>
+          <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            Recognitions for Excellence
+          </h3>
+
+          <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/icon-award.svg" class="mx-auto h-24 w-24 xl:h-28 xl:w-28" alt="award icon" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  SAE SIAT 2019 Award
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Best paper: Development of Autonomous Vehicle Controller (ISSN: SAE 2019-26-0098).
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/icon-award.svg" class="mx-auto h-24 w-24 xl:h-28 xl:w-28" alt="award icon" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  FISITA Conference 2018
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Validation of Autonomous Vehicle on Simulation Platform (F2018-ACV-051).
+                </p>
+              </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                <img src="/assets/img/icon-award.svg" class="mx-auto h-24 w-24 xl:h-28 xl:w-28" alt="award icon" />
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  IJARCSMS Publication Award
+                </h3>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Virtual Hard Disk for Recovering Corrupted Blocks (ISSN: 2321-7782).
+                </p>
               </div>
             </div>
           </div>
