@@ -119,6 +119,14 @@
 
               <li class="group pl-6">
 
+                <span @click="triggerNavItem('#volunteering')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Volunteering</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
                 <span @click="triggerNavItem('#education')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Education</span>
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
@@ -126,6 +134,14 @@
               <li class="group pl-6">
                 <span @click="triggerNavItem('#statistics')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Statistics</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#certifications')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Certifications</span>
 
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
@@ -211,6 +227,13 @@
 
             <li class="py-2">
 
+              <span @click="triggerMobileNavItem('#volunteering')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Volunteering</span>
+
+            </li>
+
+            <li class="py-2">
+
               <span @click="triggerMobileNavItem('#education')"
                 class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Education</span>
             </li>
@@ -218,6 +241,11 @@
               <span @click="triggerMobileNavItem('#statistics')"
                 class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Statistics</span>
             </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#certifications')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Certifications</span>
 
             </li>
 
@@ -699,6 +727,74 @@
           </div>
         </div>
 
+        <div class="container py-16 md:py-20" id="volunteering">
+          <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+            Volunteering
+          </h2>
+          <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            My Volunteer Experience
+          </h3>
+
+          <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="flex justify-center items-center mx-auto mb-6 rounded-xl overflow-hidden">
+                <div class="hidden group-hover:block">
+                  <img class="w-full h-full object-cover block rounded-lg" src="/assets/img/data-for-good.png" alt="Data for Good" />
+                </div>
+                <div class="block group-hover:hidden">
+                  <img class="w-full h-full object-cover block rounded-lg" src="/assets/img/data-for-good.png" alt="Data for Good" />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Volunteer · Data for Good · May 2019 - Present · 7 yrs
+                </h3>
+                <p class="pt-2 text-sm font-semibold uppercase text-black group-hover:text-white">Social Services</p>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  Analytics helping humanity
+                </p>
+              </div>
+            </div>
+
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="flex justify-center items-center mx-auto mb-6 rounded-xl overflow-hidden">
+                <div class="hidden group-hover:block">
+                  <img class="w-full h-full object-cover block rounded-lg" src="/assets/img/cognizant.png" alt="Cognizant" />
+                </div>
+                <div class="block group-hover:hidden">
+                  <img class="w-full h-full object-cover block rounded-lg" src="/assets/img/cognizant.png" alt="Cognizant" />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Outreach Associate · Cognizant · Sep 2014 - Jan 2019 · 4 yrs 5 mos
+                </h3>
+                <p class="pt-2 text-sm font-semibold uppercase text-black group-hover:text-white">Environment</p>
+                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                  "Go Green" plantation drive<br>Outreach - Weekend classes to underprivileged children and volunteering for Annual day and Children Sports day
+                </p>
+              </div>
+            </div>
+
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+              <div class="flex justify-center items-center mx-auto mb-6 rounded-xl overflow-hidden">
+                <div class="hidden group-hover:block">
+                  <img class="w-full h-full object-cover block rounded-lg" src="/assets/img/acces-employment.png" alt="ACCES Employment" />
+                </div>
+                <div class="block group-hover:hidden">
+                  <img class="w-full h-full object-cover block rounded-lg" src="/assets/img/acces-employment.png" alt="ACCES Employment" />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                  Mentor · ACCES Employment · Sep 2019 - Present · 6 yrs 8 mos
+                </h3>
+                <p class="pt-2 text-sm font-semibold uppercase text-black group-hover:text-white">Education</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="container py-16 md:py-20" id="education">
           <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
             My Education
@@ -803,10 +899,10 @@
                   </div>
                   <div class="pt-5 md:pl-5 md:pt-0">
                     <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-                      3
+                      26
                     </h1>
                     <h4 class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
-                      Awards & Achievements
+                      Certifications & Awards
                     </h4>
                   </div>
                 </div>
@@ -842,6 +938,147 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="certifications" class="container py-16 md:py-20 bg-white">
+          <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+            Licenses & Certifications
+          </h2>
+          <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            Professional Certifications
+          </h3>
+
+          <div class="grid grid-cols-1 gap-4 pt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+            <!-- Microsoft Certifications -->
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-microsoft.svg" class="mx-auto h-12 w-36 object-contain" alt="Microsoft" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Fabric Data Engineer - DP 700</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Microsoft</p>
+              <p class="text-grey group-hover:text-white text-xs mb-0.5">Issued May 2025 · Expires May 2026</p>
+              <p class="text-grey group-hover:text-white text-xs">Credential ID 2D89229B2807F606</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-microsoft.svg" class="mx-auto h-12 w-36 object-contain" alt="Microsoft" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Fabric Analytics Engineer - DP 600</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Microsoft</p>
+              <p class="text-grey group-hover:text-white text-xs mb-0.5">Issued Jul 2024 · Expires Jul 2026</p>
+              <p class="text-grey group-hover:text-white text-xs">Skills: Fabric Analytics Engineer</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-microsoft.svg" class="mx-auto h-12 w-36 object-contain" alt="Microsoft" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Microsoft Learn Cloud Skills Challenge at Build 2024</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Microsoft</p>
+              <p class="text-grey group-hover:text-white text-xs">Issued Jun 2024</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-microsoft.svg" class="mx-auto h-12 w-36 object-contain" alt="Microsoft" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Power BI Data Analyst Associate</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Microsoft</p>
+              <p class="text-grey group-hover:text-white text-xs mb-0.5">Issued Jul 2024 · Expires Jul 2026</p>
+              <p class="text-grey group-hover:text-white text-xs">Credential ID 9D4F8670F86348E7</p>
+            </div>
+
+            <!-- Other Certifications -->
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-smith.svg" class="mx-auto h-12 w-36 object-contain" alt="Smith School of Business" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">MMA ML Cup Winner 2021 - 1st Place</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Smith School of Business at Queen's University</p>
+              <p class="text-grey group-hover:text-white text-xs">Issued Jun 2021</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-databricks.svg" class="mx-auto h-12 w-36 object-contain" alt="Databricks" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Databricks Lakehouse Platform Essentials</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Databricks</p>
+              <p class="text-grey group-hover:text-white text-xs">Issued Mar 2022</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-scrumalliance.svg" class="mx-auto h-12 w-36 object-contain" alt="Scrum Alliance" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Certified ScrumMaster (CSM)</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Scrum Alliance, Inc.</p>
+              <p class="text-grey group-hover:text-white text-xs mb-0.5">Issued Feb 2022</p>
+              <p class="text-grey group-hover:text-white text-xs">Credential ID 1511133</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-udacity.svg" class="mx-auto h-12 w-36 object-contain" alt="Udacity" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">AWS Machine Learning Foundation</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Udacity</p>
+              <p class="text-grey group-hover:text-white text-xs">Issued Oct 2021</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-microsoft.svg" class="mx-auto h-12 w-36 object-contain" alt="Microsoft" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Azure AI Fundamentals</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Microsoft</p>
+              <p class="text-grey group-hover:text-white text-xs">Issued Jul 2021</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/we-cloud-data.png" class="mx-auto h-12 w-36 object-contain" alt="WeCloudData" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Big Data for Data Scientists</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">WeCloudData</p>
+              <p class="text-grey group-hover:text-white text-xs">Issued Mar 2020</p>
+            </div>
+
+            <!-- More cards continue similarly for remaining certifications -->
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs lg:col-span-2">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/we-cloud-data.png" class="mx-auto h-12 w-36 object-contain" alt="WeCloudData" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Advanced Python for Data Science · SQL for Data Science · DevOps for Data Scientists</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">WeCloudData & LinkedIn (2019)</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-udemy.svg" class="mx-auto h-12 w-36 object-contain" alt="Udemy" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Udacity Data Scientist Nanodegree</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Udacity</p>
+              <p class="text-grey group-hover:text-white text-xs">Issued Oct 2018</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-ibm.svg" class="mx-auto h-12 w-36 object-contain" alt="IBM" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">IBM Blockchain Essentials</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">IBM</p>
+            </div>
+
+            <div class="group rounded px-6 py-8 shadow hover:bg-primary text-xs">
+              <div class="mx-auto h-12 w-36 mb-2">
+                <img src="/assets/img/logo-google.png" class="mx-auto h-12 w-36 object-contain" alt="Google" />
+              </div>
+              <h4 class="font-semibold uppercase text-primary group-hover:text-yellow mb-1">Google Analytics Advanced Certification</h4>
+              <p class="text-grey group-hover:text-white text-xs mb-1">Google</p>
             </div>
           </div>
         </div>
